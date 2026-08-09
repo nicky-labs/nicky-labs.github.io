@@ -3,43 +3,131 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal website of Nicky Pisitpong.">
-    <title>Nicky Pisitpong</title>
+    <meta name="description" content="Napassorn (Nicky) Pisitpong is a market researcher, strategist, and AI builder creating new ways to turn insight into action.">
+    <meta name="theme-color" content="#001638">
+    <meta property="og:title" content="Napassorn (Nicky) Pisitpong">
+    <meta property="og:description" content="Market researcher, strategist, and AI builder.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nickypisitpong.com">
+    <meta property="og:image" content="https://nickypisitpong.com/assets/profile.jpg">
+    <title>Napassorn (Nicky) Pisitpong | Market Research, Strategy & AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.dataset.theme=localStorage.getItem('nicky-theme')||'dark';</script>
   </head>
   <body>
-    <header class="nav wrap">
-      <a class="brand" href="#top">NP<span>.</span></a>
-      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="monogram" href="#top" aria-label="Nicky Pisitpong, home">NP<span>✦</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about"><span>01.</span> About</a>
+        <a href="#experience"><span>02.</span> Experience</a>
+        <a href="#projects"><span>03.</span> Projects</a>
+        <a href="#contact"><span>04.</span> Contact</a>
+        <a class="resume-button" href="#experience">Résumé</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+      </nav>
     </header>
-    <main id="top">
-      <section class="hero wrap">
-        <p class="eyebrow">Hello, I’m Nicky Pisitpong</p>
-        <h1>I build thoughtful things for a changing world.</h1>
-        <p class="intro">A personal corner of the internet for my work, ideas, and the projects I care about.</p>
-        <div class="actions"><a class="button" href="#contact">Get in touch <span>↗</span></a><a class="text-link" href="https://github.com/nicky-labs" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+
+    <main id="main">
+      <section class="hero section-shell" id="top">
+        <p class="eyebrow">Hello, my name is</p>
+        <h1>Napassorn <span>(Nicky)</span> Pisitpong.</h1>
+        <h2>I explore how people, markets, and technology shape one another.</h2>
+        <p class="hero-summary">Market researcher, strategist, and AI builder from Thailand—currently creating new ways to turn insight into action.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#projects">Explore my work <span>↗</span></a>
+          <a class="text-link" href="mailto:napassorn.psp@gmail.com">napassorn.psp@gmail.com <span>↗</span></a>
+        </div>
+        <div class="hero-footnote"><span></span><p>Currently pursuing an MS at NYU Stern & NYU Shanghai</p></div>
       </section>
-      <section id="about" class="section wrap two-column">
-        <p class="label">01 / About</p>
-        <div><h2>Curious by default.<br>Intentional in the details.</h2><p>I’m Nicky. This website is a home for the work I’m making and the ideas I’m exploring. Come back soon—there’s more on the way.</p></div>
-      </section>
-      <section id="work" class="section wrap">
-        <p class="label">02 / Selected work</p>
-        <div class="cards">
-          <article class="card"><p class="card-number">01</p><h3>Projects</h3><p>A collection of things I’ve built, learned from, and want to share.</p><span>Coming soon</span></article>
-          <article class="card accent"><p class="card-number">02</p><h3>Notes</h3><p>Ideas, observations, and useful things worth remembering.</p><span>Coming soon</span></article>
+
+      <section class="content-section section-shell reveal" id="about">
+        <div class="section-title"><span>01.</span><h2>About me</h2><i></i></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <h3>Market researcher, strategist, and AI builder.</h3>
+            <p>Growing up in Thailand sparked my curiosity about people, cultures, and the forces that shape their choices. Having lived in Thailand, France, the United States, and China, I’ve learned to experience places deeply—staying long enough to understand how a city works rather than simply passing through it.</p>
+            <p>Professionally, I have worked across market research, consumer insights, pricing, and commercial strategy at NielsenIQ, Ipsos, and L’Oréal. I’m equally interested in analysis and execution: discovering the insight, communicating it clearly, and turning it into action.</p>
+            <p>Now, I’m combining that foundation with technology and AI to create useful research tools, digital products, and content—including <em>Behind the Beauty Shelf</em>.</p>
+            <div class="location-line" aria-label="Places Nicky has lived"><span>Thailand</span><i>→</i><span>France</span><i>→</i><span>United States</span><i>→</i><span>China</span></div>
+          </div>
+          <figure class="portrait-wrap">
+            <div class="portrait-frame"><img src="assets/profile.jpg" alt="Professional portrait of Napassorn Nicky Pisitpong" width="720" height="900"></div>
+          </figure>
         </div>
       </section>
-      <section id="contact" class="contact wrap">
-        <p class="label">03 / Contact</p>
-        <h2>Let’s make something<br>worth talking about.</h2>
-        <a class="email" href="mailto:hello@nickypisitpong.com">hello@nickypisitpong.com <span>↗</span></a>
+
+      <section class="content-section section-shell reveal" id="experience">
+        <div class="section-title"><span>02.</span><h2>Professional experience</h2><i></i></div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-meta"><p>Apr 2025 — May 2026</p><p>Bangkok, Thailand</p></div>
+            <div class="experience-body"><h3>Senior Research Executive <span>@ Ipsos</span></h3><ul><li>Led a pricing study for a global beauty company using Discrete Choice Modeling, translating consumer preferences across whitening, anti-aging, and UV segments into pricing, promotion, and innovation recommendations.</li><li>Delivered 10+ product and concept-testing studies for leading FMCG brands across coffee, dairy, and personal care.</li></ul><div class="tags"><span>Pricing strategy</span><span>Beauty</span><span>Consumer insights</span><span>Discrete choice</span></div></div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-meta"><p>Sep 2023 — Mar 2025</p><p>Bangkok, Thailand</p></div>
+            <div class="experience-body"><h3>Research Executive <span>@ NielsenIQ</span></h3><ul><li>Managed 25–30 customized studies for blue-chip clients using Brand Health, Product Testing, and Usage & Attitude methodologies.</li><li>Integrated retail datasets and primary research to deliver actionable, data-driven business recommendations.</li><li>Led cross-functional teams and client relationships across budgets, timelines, fieldwork, analysis, and final delivery.</li></ul><div class="tags"><span>Market research</span><span>Retail data</span><span>Brand health</span><span>Project leadership</span></div></div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-meta"><p>Jun 2023 — Sep 2023</p><p>Bangkok, Thailand</p></div>
+            <div class="experience-body"><h3>Commercial Marketing Intern <span>@ L’Oréal</span></h3><ul><li>Analyzed competitor pricing, consumer purchasing behavior, and price elasticity for Thailand’s hair-care market.</li><li>Tracked product launches and promotional activity to identify market opportunities and strengthen competitive positioning.</li></ul><div class="tags"><span>Commercial strategy</span><span>Pricing analysis</span><span>Beauty</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell reveal" id="education">
+        <div class="section-title"><span>03.</span><h2>Education</h2><i></i></div>
+        <div class="education-grid">
+          <article><p class="card-kicker">2025 — 2027</p><h3>New York University</h3><p class="degree">MS in Marketing and Retail Science</p><p>NYU Stern School of Business & NYU Shanghai</p><small>Marketing Analytics · Data-Driven Decision Making · Statistics & Data Analysis · Python for Data Analytics</small></article>
+          <article><p class="card-kicker">Class of 2023</p><h3>Thammasat University</h3><p class="degree">BBA in Finance, Minor in Marketing</p><p>Thammasat Business School</p><small>First-Class Honors · Top 10% of graduating class · GPA 3.55</small></article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell reveal" id="projects">
+        <div class="section-title"><span>04.</span><h2>Selected projects</h2><i></i></div>
+        <article class="featured-project">
+          <div class="project-image"><img src="assets/beauty-shelf.png" alt="Behind the Beauty Shelf market intelligence interface" width="1000" height="984"></div>
+          <div class="project-copy">
+            <div class="project-status"><span>Featured AI & Data Product</span><i>In development</i></div>
+            <h3>Behind the <em>Beauty Shelf</em></h3>
+            <p>An interactive beauty-market intelligence platform for exploring public parent companies, divisions, brands, market structure, and category trends—with an AI-assisted research experience.</p>
+            <ul class="project-features"><li>Market structure explorer</li><li>Portfolio and brand index</li><li>Category trends</li><li>“Ask the Shelf” AI research</li></ul>
+            <div class="tags"><span>AI product</span><span>Beauty intelligence</span><span>Data visualization</span><span>Market research</span></div>
+            <p class="project-note">Live project link coming soon.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-section section-shell reveal" id="skills">
+        <div class="section-title"><span>05.</span><h2>Capabilities</h2><i></i></div>
+        <div class="capabilities-grid">
+          <article><span>01</span><h3>Research & Strategy</h3><p>Consumer insights, pricing, brand health, product testing, U&A studies, questionnaire design, sampling, and commercial strategy.</p></article>
+          <article><span>02</span><h3>Analytics & Tools</h3><p>Excel, Power BI, Python with Pandas, statistics, data analysis, retail datasets, and executive presentations.</p></article>
+          <article><span>03</span><h3>Product & AI</h3><p>AI-assisted research, prompt engineering, digital product thinking, content generation, and rapid experimentation.</p></article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell reveal" id="leadership">
+        <div class="section-title"><span>06.</span><h2>Leadership & involvement</h2><i></i></div>
+        <div class="leadership-list">
+          <article><div><p class="card-kicker">President · 2022–2023</p><h3>BBA Charity Concert 2023</h3></div><p>Led a team of 90+ students to produce a concert for more than 1,000 attendees, raising THB 350,000 for charity while coordinating sponsors, vendors, promotions, budgets, and event operations.</p></article>
+          <article><div><p class="card-kicker">Delegate · 2022</p><h3>APEC Voices of the Future</h3></div><p>Selected as one of 12 youth representatives at APEC and the CEO Summit, received the June Mayne Gould Award, and was invited as the only APEC 2022 delegate to attend APEC 2023 in San Francisco.</p></article>
+        </div>
+      </section>
+
+      <section class="contact section-shell reveal" id="contact">
+        <p class="eyebrow">07. What’s next?</p>
+        <h2>Let’s turn curiosity into something useful.</h2>
+        <p>I’m always interested in thoughtful conversations about markets, consumer behavior, AI, and new product ideas.</p>
+        <a class="primary-button" href="mailto:napassorn.psp@gmail.com">Start a conversation <span>↗</span></a>
+        <div class="contact-links"><a href="mailto:napassorn.psp@gmail.com">Email</a><a href="https://www.linkedin.com/in/napassorn-nicky-pisitpong-842646204/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/nicky-labs" target="_blank" rel="noopener">GitHub</a></div>
       </section>
     </main>
-    <footer class="wrap"><span>© <span id="year"></span> Nicky Pisitpong</span><a href="#top">Back to top ↑</a></footer>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <footer><p>Designed & built for curiosity.</p><p>© <span id="year"></span> Napassorn Pisitpong</p></footer>
+    <script src="script.js"></script>
   </body>
 </html>
