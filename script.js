@@ -1,22 +1,15 @@
-const root = document.documentElement;
-const themeButton = document.querySelector('.theme-toggle');
-
-themeButton.addEventListener('click', () => {
-  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  root.dataset.theme = nextTheme;
-  localStorage.setItem('nicky-theme', nextTheme);
-  document.querySelector('meta[name="theme-color"]').content = nextTheme === 'dark' ? '#001638' : '#f7f4ef';
-});
-
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const navLinks = [...document.querySelectorAll('.intro-panel nav a')];
+const sections = navLinks.map((link) => document.querySelector(link.getAttribute('href')));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
+    if (!entry.isIntersecting) return;
+    navLinks.forEach((link) => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+    });
   });
-}, { threshold: 0.12 });
+}, { rootMargin: '-25% 0px -65%', threshold: 0 });
 
-document.querySelectorAll('.reveal').forEach((section) => observer.observe(section));
+sections.forEach((section) => observer.observe(section));

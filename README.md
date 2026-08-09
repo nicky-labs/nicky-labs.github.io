@@ -13,7 +13,7 @@ Personal portfolio for `nickypisitpong.com`, hosted free on GitHub Pages.
 
 The custom domain and Porkbun DNS records do not need to be changed.
 
-The résumé button currently opens the on-page professional history. The original PDF is not included because it displays a personal phone number.
+The site uses a single dark Wharton-inspired theme. The original résumé PDF is not included because it displays a personal phone number.
 
 ## When Behind the Beauty Shelf is live
 
