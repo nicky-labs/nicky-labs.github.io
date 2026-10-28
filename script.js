@@ -92,7 +92,10 @@ function applyTranslation(language) {
   $(".intro-panel h2").textContent = copy.role;
   $(".tagline").textContent = copy.tagline;
   $$(".intro-panel nav a span").forEach((node, index) => { node.textContent = copy.nav[index]; });
-  ["about", "experience", "projects", "education", "leadership", "contact"].forEach((id, index) => { $(`#${id} .mobile-heading`).textContent = copy.headings[index]; });
+  ["about", "experience", "projects", "education", "leadership", "contact"].forEach((id, index) => {
+    const heading = $(`#${id} .mobile-heading`);
+    if (heading) heading.textContent = copy.headings[index];
+  });
   $$("#about .prose p").forEach((node, index) => { node.innerHTML = copy.about[index]; });
   $$("#about .quick-facts div").forEach((node, index) => { $("span", node).textContent = copy.facts[index][0]; $("strong", node).textContent = copy.facts[index][1]; });
   $$("#experience .entry").forEach((node, index) => {
